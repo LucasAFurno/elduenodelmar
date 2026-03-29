@@ -156,6 +156,8 @@ h3 {
 .category-card p,
 .experience-list p,
 .visit-card p,
+.review-card p,
+.map-card p,
 .site-footer p {
   font-size: 1.02rem;
   line-height: 1.7;
@@ -207,7 +209,10 @@ h3 {
 .category-card,
 .experience-quote,
 .experience-list article,
-.visit-card {
+.visit-card,
+.review-card,
+.map-card,
+.map-frame {
   border: 1px solid var(--border);
   background: var(--panel);
   backdrop-filter: blur(10px);
@@ -349,6 +354,84 @@ h3 {
   grid-template-columns: 1.15fr 0.85fr;
 }
 
+.visit-hours {
+  font-weight: 700;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.review-card {
+  padding: 1.4rem;
+  border-radius: 24px;
+}
+
+.review-card-featured {
+  background:
+    linear-gradient(135deg, rgba(16, 61, 76, 0.96), rgba(31, 91, 102, 0.92)),
+    var(--panel);
+}
+
+.review-card-featured h3,
+.review-card-featured p,
+.review-card-featured .review-score,
+.review-card-featured .review-link {
+  color: #f8eedc;
+}
+
+.review-score {
+  margin: 0 0 0.6rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.review-card h3,
+.map-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 2rem;
+  color: var(--sea-deep);
+}
+
+.review-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.map-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1.2rem;
+}
+
+.map-frame,
+.map-card {
+  padding: 1rem;
+  border-radius: 24px;
+}
+
+.map-frame iframe {
+  width: 100%;
+  min-height: 420px;
+  border: 0;
+  border-radius: 18px;
+}
+
+.map-points {
+  margin: 1rem 0 1.4rem;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.map-points li + li {
+  margin-top: 0.55rem;
+}
+
 .faq-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -413,6 +496,8 @@ h3 {
   .hero,
   .experience-layout,
   .visit-grid,
+  .reviews-grid,
+  .map-layout,
   .story-grid,
   .category-grid,
   .faq-grid {
@@ -461,6 +546,9 @@ h3 {
   .experience-quote,
   .experience-list article,
   .visit-card,
+  .review-card,
+  .map-card,
+  .map-frame,
   .faq-card,
   .hero-card {
     border-radius: 20px;

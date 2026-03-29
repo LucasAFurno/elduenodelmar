@@ -72,27 +72,17 @@ img {
 
 .brand-lockup {
   display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
 }
 
 .brand-home {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.9rem;
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+  display: inline-block;
 }
 
 .brand-mark {
-  width: 62px;
-  height: 62px;
-  flex: 0 0 auto;
-  filter: drop-shadow(0 8px 18px rgba(14, 50, 92, 0.14));
+  width: min(360px, 58vw);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 10px 20px rgba(14, 50, 92, 0.12));
 }
 
 .brand-kicker,
@@ -104,18 +94,11 @@ img {
   color: var(--sunburn);
 }
 
-.brand-name,
 h1,
 h2,
 h3 {
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 0.02em;
-}
-
-.brand-name {
-  font-size: 2rem;
-  color: var(--sea-deep);
-  line-height: 0.95;
 }
 
 .site-nav {
@@ -429,13 +412,8 @@ h3 {
     gap: 0.8rem 1rem;
   }
 
-  .brand-home {
-    gap: 0.75rem;
-  }
-
   .brand-mark {
-    width: 54px;
-    height: 54px;
+    width: min(290px, 72vw);
   }
 
   .hero {

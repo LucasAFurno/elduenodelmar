@@ -8,6 +8,7 @@
     name="description"
     content="Recuerdos, regalos y regionales en Santa Clara del Mar. Un clásico local atendido por sus dueños, a metros de la rotonda."
   >
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -16,8 +17,13 @@
 <body>
   <header class="site-header">
     <div class="brand-lockup">
-      <span class="brand-kicker">Santa Clara del Mar</span>
-      <a href="#inicio" class="brand-name">El Dueño del Mar</a>
+      <a href="#inicio" class="brand-home" aria-label="Ir al inicio de El Dueño del Mar">
+        <img class="brand-mark" src="./brand-mark.svg" alt="Logo tiburón de El Dueño del Mar">
+        <div class="brand-text">
+          <span class="brand-kicker">Santa Clara del Mar</span>
+          <span class="brand-name">El Dueño del Mar</span>
+        </div>
+      </a>
     </div>
     <nav class="site-nav" aria-label="Principal">
       <a href="#historia">La tienda</a>
